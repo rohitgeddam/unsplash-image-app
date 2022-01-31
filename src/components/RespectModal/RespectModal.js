@@ -29,6 +29,14 @@ function ModalExampleCloseConfig() {
   const [showCounter, setShowCounter] = useState(false)
 
   const handleClose = () => {
+
+    if ('speechSynthesis' in window) {
+        var msg = new SpeechSynthesisUtterance();
+        msg.text = "Thank you Meghna for making my minor project";
+        window.speechSynthesis.speak(msg);
+        
+        }
+      
       setTimeout(() => {
           dispatch({type:'CLOSE_MODAL'})
       }, 6000)
@@ -54,18 +62,18 @@ function ModalExampleCloseConfig() {
           onClose={() => dispatch({ type: 'CLOSE_MODAL' })}
         //   trigger={<Button>Show Modal</Button>}
         >
-          <Modal.Header style={{width: '100%', height: '250px'}}>Developed By: Meghna Parikhar</Modal.Header>
+          <Modal.Header style={{width: '100%', height: '150px'}}>Developed By Meghna Parikhar for Rajeev Mandle</Modal.Header>
          { showCounter &&  
          <Modal.Content>
-             <h1>Thank you meghna for making my minor project.</h1>
+             <h1>Thank you meghna for making my minor project 🙏🏻</h1>
             <p>Wait {counter} seconds</p>
           </Modal.Content>}
           <Modal.Actions>
             {/* <Button onClick={() => dispatch({ type: 'CLOSE_MODAL' })} negative>
               No
             </Button> */}
-            <Button onClick={handleClose} positive>
-              Thank You Meghna
+            <Button onClick={handleClose} positive disabled={showCounter}>
+              Say Thanks and Close
             </Button>
           </Modal.Actions>
         </Modal>
