@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/unsplash-image-app/static/css/main.a0b4e726.chunk.css",
-    "main.js": "/unsplash-image-app/static/js/main.5351f03c.chunk.js",
-    "main.js.map": "/unsplash-image-app/static/js/main.5351f03c.chunk.js.map",
+    "main.js": "/unsplash-image-app/static/js/main.c7acb284.chunk.js",
+    "main.js.map": "/unsplash-image-app/static/js/main.c7acb284.chunk.js.map",
     "runtime-main.js": "/unsplash-image-app/static/js/runtime-main.f72b878a.js",
     "runtime-main.js.map": "/unsplash-image-app/static/js/runtime-main.f72b878a.js.map",
     "static/css/2.b8580263.chunk.css": "/unsplash-image-app/static/css/2.b8580263.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.b8580263.chunk.css",
     "static/js/2.e96746eb.chunk.js",
     "static/css/main.a0b4e726.chunk.css",
-    "static/js/main.5351f03c.chunk.js"
+    "static/js/main.c7acb284.chunk.js"
   ]
 }
